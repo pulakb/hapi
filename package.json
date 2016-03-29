@@ -1,14 +1,19 @@
 {
-  "name": "RESTful-HAPI",
-  "version": "0.0.1",
-  "main": "app.js",
+  "name": "hapi-rest-mongo",
+  "version": "1.0.0",
+  "description": "Simple REST project with hapijs and mongodb.",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patrick Meier",
+  "license": "Apache-2.0",
   "dependencies": {
-    "good-console": "^5.0.0",
-    "hapi": "^8.5.1",
-    "hapi-swagger": "0.7.3",
-    "joi": "^6.4.2",
-    "mongojs": "^2.3.0",
-    "mongoose": "^4.0.3",
+    "boom": "^3.0.0",
+    "hapi": "^11.1.2",
+    "joi": "^7.0.1",
+    "mongojs": "^2.1.0",
     "node-uuid": "^1.4.7"
   }
 }
