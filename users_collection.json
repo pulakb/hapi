@@ -1,0 +1,170 @@
+[
+  {
+    "Username":"Utkkarsh",
+    "UserID": "1234567",
+    "wallPhotoURL": "http://profiles.example.org/sconnolly.jpg",
+    "backgroundWallPhotoURL": "http://profiles.example.org/sconnolly.jpg",
+    "FirstName": "Utkarsh",
+    "MiddleName": "Kumar",
+    "LastName": "Mishra",
+    "NoOfFriends": "354",
+    "MaritalStatus":"MARRIED",
+    "CurrentCity":"Bangalore",
+    "FromCity":"Rewa MP",
+    "FollowedByPersons":"15",
+    "Gender": "MALE",
+    "EmailId":"utkarsh@gmail.com",
+    "ContactNumber":"121398713",
+    "Country": "India",
+    "Favorites":[
+      "Events",
+      "Friends",
+      "Ads Manages",
+      "NearBy Friends",
+      "Saved"
+    ],
+    "Groups":[
+      "Groups1",
+      "Groups2",
+      "Groups3",
+      "Groups4",
+      "Groups5"],
+
+    "Photos": [
+      {
+        "ImageName": "EMPLOYEE_NOTIFICATION",
+        "ImageDetails": "JENNIFER MARTIN",
+        "ImageURL": "Your next flight has been delayed by 6 hours, please report to ground crew upon arrival for more details."
+      },
+      {
+        "ImageName": "EMPLOYEE_NOTIFICATION",
+        "ImageDetails": "JENNIFER MARTIN",
+        "ImageURL": "Your next flight has been delayed by 6 hours, please report to ground crew upon arrival for more details."
+      }
+    ],
+    "WallPosts": [{
+      "Test": "",
+      "ImageURL":"",
+      "NumberOfLikes":"",
+      "Comments":[
+        {
+          "name_of_person":"",
+          "CommentsText":""
+        },
+        {"name_of_person":"",
+          "CommentsText":""}
+      ]
+    },{
+      "Test": "",
+      "ImageURL":"",
+      "NumberOfLikes":"",
+      "Comments":[
+        {
+          "name_of_person":"",
+          "CommentsText":""
+        },
+        {"name_of_person":"",
+          "CommentsText":""}
+      ]
+    },{
+      "Test": "",
+      "ImageURL":"",
+      "NumberOfLikes":"",
+      "Comments":[
+        {
+          "name_of_person":"",
+          "CommentsText":""
+        },
+        {"name_of_person":"",
+          "CommentsText":""}
+      ]
+    },{
+      "Test": "",
+      "ImageURL":"",
+      "NumberOfLikes":"",
+      "Comments":[
+        {
+          "name_of_person":"",
+          "CommentsText":""
+        },
+        {"name_of_person":"",
+          "CommentsText":""}
+      ]
+    }
+    ],
+    "friends": [
+      {
+        "FirstName": "Rajesh",
+        "LastName": "Rajesh",
+        "MiddleName": "Rajesh",
+        "UserId": "12341",
+        "ImageURL": "JENNIFER MARTIN",
+        "No_Of_Mutual_Frnds": "31"
+      },
+      {
+        "FirstName": "Rajesh",
+        "LastName": "Rajesh",
+        "MiddleName": "Rajesh",
+        "UserId": "12341",
+        "ImageURL": "JENNIFER MARTIN",
+        "No_Of_Mutual_Frnds": "31"
+      },
+      {
+        "FirstName": "Rajesh",
+        "LastName": "Rajesh",
+        "MiddleName": "Rajesh",
+        "UserId": "12341",
+        "ImageURL": "JENNIFER MARTIN",
+        "No_Of_Mutual_Frnds": "31"
+      },
+      {
+        "FirstName": "Rajesh",
+        "LastName": "Rajesh",
+        "MiddleName": "Rajesh",
+        "UserId": "12341",
+        "ImageURL": "JENNIFER MARTIN",
+        "No_Of_Mutual_Frnds": "31"
+      },
+      {
+        "FirstName": "Rajesh",
+        "LastName": "Rajesh",
+        "MiddleName": "Rajesh",
+        "UserId": "12341",
+        "ImageURL": "JENNIFER MARTIN",
+        "No_Of_Mutual_Frnds": "31"
+      },
+      {
+        "FirstName": "Rajesh",
+        "LastName": "Rajesh",
+        "MiddleName": "Rajesh",
+        "UserId": "12341",
+        "ImageURL": "JENNIFER MARTIN",
+        "No_Of_Mutual_Frnds": "31"
+      },
+      {
+        "FirstName": "Rajesh",
+        "LastName": "Rajesh",
+        "MiddleName": "Rajesh",
+        "UserId": "12341",
+        "ImageURL": "JENNIFER MARTIN",
+        "No_Of_Mutual_Frnds": "31"
+      },
+      {
+        "FirstName": "Rajesh",
+        "LastName": "Rajesh",
+        "MiddleName": "Rajesh",
+        "UserId": "12341",
+        "ImageURL": "JENNIFER MARTIN",
+        "No_Of_Mutual_Frnds": "31"
+      },
+      {
+        "FirstName": "Rajesh",
+        "LastName": "Rajesh",
+        "MiddleName": "Rajesh",
+        "UserId": "12341",
+        "ImageURL": "JENNIFER MARTIN",
+        "No_Of_Mutual_Frnds": "31"
+      }
+    ]
+  }
+]
