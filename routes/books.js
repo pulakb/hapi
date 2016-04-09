@@ -3,6 +3,7 @@
 const Boom = require('boom');
 const uuid = require('node-uuid');
 const Joi = require('joi');
+const _ = require('lodash-node');
 
 exports.register = function(server, options, next) {
 
@@ -133,6 +134,164 @@ exports.register = function(server, options, next) {
       });
     }
   });
+
+// All Friends - Route
+
+server.route({
+  method: 'GET',
+  path: '/users/{id}/friends',
+  handler: function(request, reply) {
+
+    users.findOne({
+      UserID: request.params.id
+    }, (err, doc) => {
+
+      if (err) {
+      return reply(Boom.badData('Internal MongoDB error', err));
+    }
+
+    if (!doc) {
+      return reply(Boom.notFound());
+    }
+
+    reply(doc.friends);
+  });
+
+}
+});
+
+// Specific Friend - Route
+
+server.route({
+  method: 'GET',
+  path: '/users/{id}/friends/{fid}',
+  handler: function(request, reply) {
+
+    users.findOne({
+      UserID: request.params.id
+    }, (err, doc) => {
+
+      if (err) {
+      return reply(Boom.badData('Internal MongoDB error', err));
+    }
+
+    if (!doc) {
+      return reply(Boom.notFound());
+    }
+
+    let _fid = request.params['fid'];
+    let _friends = doc.friends;
+    let _friend;
+
+    _friends.forEach(function (friend) {
+      if (friend.UserId === _fid) {
+        _friend = friend;
+      }
+    });
+
+    reply(_friend);
+
+  });
+
+}
+});
+
+// All Wallposts - Route
+
+server.route({
+  method: 'GET',
+  path: '/users/{id}/wallposts',
+  handler: function(request, reply) {
+
+    users.findOne({
+      UserID: request.params.id
+    }, (err, doc) => {
+
+      if (err) {
+      return reply(Boom.badData('Internal MongoDB error', err));
+    }
+
+    if (!doc) {
+      return reply(Boom.notFound());
+    }
+
+    reply(doc.WallPosts);
+  });
+
+}
+});
+
+// Specific Wallposts - Route
+
+server.route({
+  method: 'GET',
+  path: '/users/{id}/wallposts/{postid}',
+  handler: function(request, reply) {
+
+    users.findOne({
+      UserID: request.params.id
+    }, (err, doc) => {
+
+      if (err) {
+      return reply(Boom.badData('Internal MongoDB error', err));
+    }
+
+    if (!doc) {
+      return reply(Boom.notFound());
+    }
+
+    let _postid = request.params['postid'];
+    let _wallposts = doc.WallPosts;
+    let _wallpost;
+
+    _wallposts.forEach(function (post) {
+      if (post.postId === _postid) {
+        _wallpost = post;
+      }
+    });
+
+    reply(_wallpost);
+  });
+
+}
+});
+
+// Comments of Wallposts - Route
+
+server.route({
+  method: 'GET',
+  path: '/users/{id}/wallposts/{postid}/comments',
+  handler: function(request, reply) {
+
+    users.findOne({
+      UserID: request.params.id
+    }, (err, doc) => {
+
+      if (err) {
+      return reply(Boom.badData('Internal MongoDB error', err));
+    }
+
+    if (!doc) {
+      return reply(Boom.notFound());
+    }
+
+    let _postid = request.params['postid'];
+    let _wallposts = doc.WallPosts;
+    let _wallpost;
+
+    _wallposts.forEach(function (post) {
+      if (post.postId === _postid) {
+        _wallpost = post;
+      }
+    });
+
+    let _comments = _wallpost["Comments"];
+
+    reply(_comments);
+  });
+
+}
+});
 
   return next();
 };

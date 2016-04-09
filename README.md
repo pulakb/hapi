@@ -9,4 +9,4 @@ Tutorials:
 
 mongoimport --db hapi-rest-mongo --collection users --file users_collection.json --jsonArray
 
-https://github.com/p-meier/hapi-rest-mongo
+# https://github.com/p-meier/hapi-rest-mongo

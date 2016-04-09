@@ -15,5 +15,10 @@
     "joi": "^7.0.1",
     "mongojs": "^2.1.0",
     "node-uuid": "^1.4.7"
+  },
+  "devDependencies": {
+    "good": "^6.6.0",
+    "good-console": "^5.3.1",
+    "lodash-node": "^3.10.2"
   }
 }
